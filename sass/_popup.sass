@@ -1,0 +1,124 @@
+.section-popup
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 999
+	background-image: $color-grad
+	display: none
+	&_box
+		position: fixed
+		top: 50%
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+		width: 360px
+		text-align: center
+	&_close
+		position: absolute
+		font-size: 28px
+		color: $text-color-light
+		opacity: 0.5
+		top: 0
+		right: 11px
+		&:hover
+			cursor: pointer
+			opacity: 1
+.section-main
+	&_form
+		margin-left: -10px
+		padding-top: 91px
+		text-align: center
+		&__wrap1___popup
+			position: relative
+			border-top: 1px solid rgba(255, 255, 255, 0.5)
+			&::after
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				bottom: 28px
+				width: 1px
+				background-color: rgba(255, 255, 255, 0.5)
+				z-index: 1
+			&::before
+				content: ""
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 28px
+				width: 1px
+				background-color: rgba(255, 255, 255, 0.5)
+				z-index: 1
+		&__wrap___popup
+			position: relative
+			padding-top: 39px
+			z-index: 3
+			&::after
+				content: ""
+				position: absolute
+				bottom: 28px
+				left: 0
+				right: 300px
+				height: 1px
+				background-color: rgba(255, 255, 255, 0.5)
+			&::before
+				content: ""
+				position: absolute
+				bottom: 28px
+				left: 300px
+				right: 0
+				height: 1px
+				background-color: rgba(255, 255, 255, 0.5)
+.forming_popup
+	position: relative
+	text-align: center
+	&::after
+		content: ""
+		position: absolute
+		top: 13px
+		left: 51px
+		bottom: 15px
+		width: 21px
+		height: 21px
+		background: #fff url(../img/section-main/user_icon.png) center no-repeat
+	&::before
+		content: ""
+		position: absolute
+		top: 78px
+		left: 51px
+		bottom: 15px
+		width: 21px
+		height: 21px
+		background: #fff url(../img/section-main/phone_icon.png) center no-repeat
+.user_name__popup, .our_phone__popup
+	max-width: 301px
+	padding: 16px 100px 16px 53px
+	border: none
+	border-radius: 30px
+	font-size: 14px
+	font-family: "Proxima Nova Lt", sans-serif
+	color: $text-color-input
+.user_name__popup
+	margin-bottom: 15px
+.our_phone__popup
+	margin-bottom: 26px
+.popup
+	&_text
+		min-width: 270px
+.signature_name_2
+	position: absolute
+	top: 33px
+	left: 82px
+	font-family: "Proxima Nova Bl"
+	font-size: 12px
+	color: #000
+	display: none
+.signature_phone_2
+	position: absolute
+	top: 96px
+	left: 82px
+	font-family: "Proxima Nova Bl"
+	font-size: 12px
+	color: #000
+	display: none

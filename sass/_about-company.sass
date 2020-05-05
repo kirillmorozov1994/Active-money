@@ -1,0 +1,87 @@
+.section-company
+	padding-top: 76px
+	padding-bottom: 80px
+	&_box
+		text-align: center
+		padding-bottom: 68px
+		&__title
+			font-family: 'Proxima Nova Semibold', sans-serif
+			font-size: 26px
+			line-height: 24px
+			text-transform: uppercase
+			color: $text-color-dark
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				left: 50%
+				bottom: -23px
+				transform: translateX(-50%)
+				width: 48px
+				height: 1px
+				background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%)
+	&_desc
+		&__text1, &__text2
+			font-family: 'Proxima Nova Lt', sans-serif
+			font-size: 18px
+			line-height: 25px
+			color: #5b5b5b
+			text-align: justify
+		&__text1
+			margin-bottom: 12px
+	&_people
+		padding-top: 80px
+		&__strip1
+			position: relative
+			width: 100%
+			height: 51px
+			background-color: #1991d4
+			border-radius: 3px
+			margin-bottom: 10px
+			&::after
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 17px
+				height: 115px
+				width: 102px
+				background: url(../img/section-company/people_1.png) center no-repeat
+		&__subtitle1
+			padding-left: 19px
+			font-family: 'Proxima Nova Bl', sans-serif
+			font-size: 18px
+			color: $text-color-dark
+		&__strip2
+			position: relative
+			width: 100%
+			height: 51px
+			background-color: #7e66e7
+			border-radius: 3px
+			margin-bottom: 10px
+			&::after
+				content: ""
+				position: absolute
+				bottom: 0
+				left: 17px
+				height: 115px
+				width: 102px
+				background: url(../img/section-company/people_2.png) center no-repeat
+		&__subtitle2
+			padding-left: 19px
+			font-family: 'Proxima Nova Bl', sans-serif
+			font-size: 18px
+			color: $text-color-dark
+	&_video
+		max-width: 540px
+
+.company-grave
+	font-family: 'Proxima Nova Bl', sans-serif
+	font-size: 18px
+	line-height: 25px
+	color: $text-color-dark
+.video
+	margin-top: -48px
+	height: 420px
+	width: 100%
+
+

@@ -1,0 +1,26 @@
+.section-footer
+	position: relative
+	z-index: 1
+	background: #fff url(../img/footer/bg_footer.png) center no-repeat
+	background-size: cover
+	padding-top: 45px
+	&::after
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-image: $color-grad
+		opacity: 0.8
+		z-index: -1
+	&_text
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 30px
+		margin-top: 46px
+		opacity: 0.5
+		color: $text-color-light
+		font-family: "Open Sans", sans-serif
+		font-size: 13px
+		border-top: 1px solid rgba(255, 255, 255, 0.2)
